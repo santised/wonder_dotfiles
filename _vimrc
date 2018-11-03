@@ -25,10 +25,11 @@ call vundle#end()
 filetype plugin indent on
 
 "Settings for Solarized   -------
-if has('gui-running')
+if has('gui_running')
   let g:solarized_contrast="high"
   let g:solarized_visibility="high"
   let g:solarized_diffmode="high"
+  let g:solarized_italic=0
   set background=dark
   colorscheme solarized
 else
@@ -43,6 +44,7 @@ set foldmethod=indent
 set expandtab
 set textwidth=79
 set laststatus=2
+set hlsearch 
 nnoremap <space> za
 map <C-n> :NERDTreeToggle<CR>
 "                         -------
