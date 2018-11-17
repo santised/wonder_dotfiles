@@ -29,7 +29,6 @@ if has('gui_running')
   let g:solarized_contrast="high"
   let g:solarized_visibility="high"
   let g:solarized_diffmode="high"
-  let g:solarized_italic=0
   set background=dark
   colorscheme solarized
 else
@@ -45,8 +44,10 @@ set expandtab
 set textwidth=79
 set laststatus=2
 set hlsearch 
+set guifont=consolas:h11
 nnoremap <space> za
 map <C-n> :NERDTreeToggle<CR>
+autocmd vimenter * NERDTree
 "                         -------
 
 "File Specific settings   -------
@@ -55,7 +56,7 @@ au BufNewFile,BufRead *.py
 	set softtabstop=4
 	set shiftwidth=4
 
-au BufNewFile,BufRead *.ino,*.cpp,*.h
+au BufNewFile,BufRead *.ino,*.cpp,*.h,*.ulp
 	set tabstop=2 
 	set softtabstop=2 
 	set shiftwidth=2
