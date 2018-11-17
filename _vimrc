@@ -43,8 +43,10 @@ set foldmethod=indent
 set expandtab
 set textwidth=79
 set laststatus=2
+set guifont=consolas:h11
 nnoremap <space> za
 map <C-n> :NERDTreeToggle<CR>
+autocmd vimenter * NERDTree
 "                         -------
 
 "File Specific settings   -------
