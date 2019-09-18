@@ -34,7 +34,8 @@ if has('gui_running')
   "let g:solarized_diffmode="high"
   set background=dark
   set guifont=Consolas:h11
-  colorscheme gruvbox
+  autocmd BufEnter * colorscheme gruvbox
+  autocmd BufEnter *.md colorscheme forest-night
   "colorscheme solarized
   call togglebg#map("<F5>")
 else
@@ -69,6 +70,5 @@ au BufNewFile,BufRead *.md
 	set softtabstop=2 
 	set shiftwidth=2
   set autoindent
-  colorscheme forest-night
 "                         -------
 	
