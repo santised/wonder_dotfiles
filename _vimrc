@@ -13,6 +13,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
+Plugin 'godlygeek/tabular'
 
 "Coloschemes for VIM     -------
 Plugin 'altercation/vim-colors-solarized'
@@ -20,7 +21,6 @@ Plugin 'szorfein/fromthehell.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'sainnhe/vim-color-forest-night'
 Plugin 'sainnhe/vim-color-desert-night'
-Plugin 'sainnhe/vim-color-atlantis'
 Plugin 'dracula/vim'
 "                         -------
 
@@ -64,6 +64,11 @@ au BufNewFile,BufRead *.ino,*.cpp,*.h
 	set shiftwidth=2
   set autoindent
 
-au BufNewFile,BufRead *.txt
+au BufNewFile,BufRead *.md
+	set tabstop=2 
+	set softtabstop=2 
+	set shiftwidth=2
+  set autoindent
+  colorscheme forest-night
 "                         -------
 	
