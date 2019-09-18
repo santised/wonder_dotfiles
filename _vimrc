@@ -50,8 +50,8 @@ set hlsearch
 set foldmethod=indent
 set expandtab
 set textwidth=79
-set laststatus=2 " Starts lightline
-nnoremap <space> za 
+nnoremap <space> za
+nnoremap <F12> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 map <C-n> :NERDTreeToggle<CR>
 "                         -------
 "File Specific settings   -------
@@ -61,15 +61,15 @@ au BufNewFile,BufRead *.py
 	set shiftwidth=4
 
 au BufNewFile,BufRead *.ino,*.cpp,*.h
-	set tabstop=2 
-	set softtabstop=2 
+	set tabstop=2
+	set softtabstop=2
 	set shiftwidth=2
   set autoindent
 
 au BufNewFile,BufRead *.md
-	set tabstop=2 
-	set softtabstop=2 
+	set tabstop=2
+	set softtabstop=2
 	set shiftwidth=2
   set autoindent
 "                         -------
-	
+
