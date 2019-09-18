@@ -6,11 +6,11 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-scripts/indentpython.vim'
+Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
-Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'godlygeek/tabular'
@@ -34,6 +34,7 @@ if has('gui_running')
   "let g:solarized_diffmode="high"
   set background=dark
   set guifont=Consolas:h11
+  "colorscheme gruvbox
   autocmd BufEnter * colorscheme gruvbox
   autocmd BufEnter *.md colorscheme forest-night
   "colorscheme solarized
