@@ -14,6 +14,8 @@ Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'godlygeek/tabular'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'majutsushi/tagbar'
 
 "Coloschemes for VIM     -------
 Plugin 'altercation/vim-colors-solarized'
@@ -52,6 +54,8 @@ set expandtab
 set textwidth=79
 nnoremap <space> za
 nnoremap <F12> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+nmap <F8> :TagbarToggle<CR>
+nmap <F6> :IndentGuidesToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
 "                         -------
 "File Specific settings   -------
