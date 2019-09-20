@@ -47,7 +47,7 @@ endif
 "                         -------
 "General Settings for VIM -------
 syntax enable
-set nu
+set nu rnu
 set hlsearch
 set foldmethod=indent
 set expandtab
