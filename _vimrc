@@ -13,6 +13,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 Plugin 'godlygeek/tabular'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'majutsushi/tagbar'
@@ -35,7 +36,7 @@ if has('gui_running')
   "let g:solarized_visibility="high"
   "let g:solarized_diffmode="high"
   set background=dark
-  set guifont=Consolas:h11
+  set guifont=Consolas:h13
   "colorscheme gruvbox
   autocmd BufEnter * colorscheme gruvbox
   autocmd BufEnter *.md colorscheme forest-night
