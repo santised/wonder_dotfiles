@@ -31,21 +31,18 @@ call vundle#end()
 filetype plugin indent on
 
 "Settings for Solarized   -------
-if has('gui_running')
-  "let g:solarized_contrast="high"
-  "let g:solarized_visibility="high"
-  "let g:solarized_diffmode="high"
-  set background=dark
-  set guifont=Consolas:h13
-  "colorscheme gruvbox
-  autocmd BufEnter * colorscheme gruvbox
-  autocmd BufEnter *.md colorscheme forest-night
-  "colorscheme solarized
-  call togglebg#map("<F5>")
-else
-  colorscheme fromthehell
-endif
+"let g:solarized_contrast="high"
+"let g:solarized_visibility="high"
+"let g:solarized_diffmode="high"
+set background=dark
+set guifont=Consolas:h13
+"colorscheme gruvbox
+autocmd BufEnter * colorscheme gruvbox
+autocmd BufEnter *.md colorscheme forest-night
+"colorscheme solarized
+call togglebg#map("<F5>")
 "                         -------
+
 "General Settings for VIM -------
 syntax enable
 set nu rnu
