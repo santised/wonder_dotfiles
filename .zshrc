@@ -68,7 +68,7 @@
  67 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
  68 # Example format: plugins=(rails git textmate ruby lighthouse)
  69 # Add wisely, as too many plugins slow down shell startup.
- 70 plugins=(git python pip pep8)
+ 70 plugins=(git github python pip pep8 z)
  71
  72 source $ZSH/oh-my-zsh.sh
  73
