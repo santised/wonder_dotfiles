@@ -30,31 +30,31 @@ Plugin 'dracula/vim'
 call vundle#end()
 filetype plugin indent on
 
-"Settings for Solarized   -------
+"Graphical settings      -------
 "let g:solarized_contrast="high"
 "let g:solarized_visibility="high"
 "let g:solarized_diffmode="high"
+"colorscheme solarized
 set background=dark
 set guifont=Consolas:h13
-"colorscheme gruvbox
-autocmd BufEnter * colorscheme gruvbox
-autocmd BufEnter *.md colorscheme forest-night
-"colorscheme solarized
+colorscheme gruvbox
 call togglebg#map("<F5>")
 "                         -------
 
 "General Settings for VIM -------
 syntax enable
+
 set nu rnu
 set hlsearch
 set foldmethod=indent
 set expandtab
 set textwidth=79
+
 nnoremap <space> za
 nnoremap <F12> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
-nmap <F8> :TagbarToggle<CR>
-nmap <F6> :IndentGuidesToggle<CR>
-map <C-n> :NERDTreeToggle<CR>
+nmap     <F8> :TagbarToggle<CR>
+nmap     <F6> :IndentGuidesToggle<CR>
+map      <C-n> :NERDTreeToggle<CR>
 "                         -------
 "File Specific settings   -------
 au BufNewFile,BufRead *.py
@@ -68,10 +68,8 @@ au BufNewFile,BufRead *.ino,*.cpp,*.h
 	set shiftwidth=2
   set autoindent
 
-au BufNewFile,BufRead *.md
-	set tabstop=2
-	set softtabstop=2
-	set shiftwidth=2
-  set autoindent
+autocmd BufEnter *.md set noet
+autocmd BufEnter *.md colorscheme forest-night
+autocmd BufEnter *.md set spell
 "                         -------
 
