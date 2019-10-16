@@ -17,6 +17,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'godlygeek/tabular'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'majutsushi/tagbar'
+Plugin 'vimwiki/vimwiki'
 
 "Coloschemes for VIM     -------
 Plugin 'altercation/vim-colors-solarized'
