@@ -1,3 +1,7 @@
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 call plug#begin('~/.config/nvim/init.vim')
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -8,16 +12,18 @@ Plug 'vim-airline/vim-airline'
 Plug 'kien/ctrlp.vim'
 Plug 'godlygeek/tabular'
 Plug 'nathanaelkane/vim-indent-guides'
-"Plug 'majtsushi/tagbar'
-"Colors
-Plug 'altercation/vim-colors-solarized'
+
+"------------Colors-------------------
 Plug 'szorfein/fromthehell.vim'
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim'
+Plug 'folke/tokyonight.nvim', {'branch':'main'}
 call plug#end()
 
-colorscheme=gruvbox
-set nu
+colorscheme gruvbox
+set nu rnu
+set clipboard+=unnamedplus
+set autoindent smartindent
 
 nnoremap <space> za
 nnoremap <F12> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
@@ -35,3 +41,5 @@ au BufNewFile,BufRead *.ino,*.cpp,*.h
 	set softtabstop=2
 	set shiftwidth=2
   set autoindent
+
+autocmd BufEnter *.ino colorscheme tokyonight
