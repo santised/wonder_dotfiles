@@ -1,4 +1,6 @@
-# Configuration for Alacritty, the GPU enhanced terminal emulator.
+import:
+  - "C:/Users/Elias/Documents/Github/wonder_dotfiles/alacritty_tokyonight_night.yml"
+  #- "C:/Users/Elias/Documents/Github/wonder_dotfiles/dracula for alacritty/dracla.yml"
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
