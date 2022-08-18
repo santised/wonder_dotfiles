@@ -20,7 +20,7 @@ Plug 'dracula/vim'
 Plug 'folke/tokyonight.nvim', {'branch':'main'}
 call plug#end()
 
-colorscheme gruvbox
+colorscheme fromthehell
 set nu rnu
 set clipboard+=unnamedplus
 set autoindent smartindent
