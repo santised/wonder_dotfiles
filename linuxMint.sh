@@ -17,6 +17,9 @@ curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.
 apt install cutecom -y
 apt install screen -y
 
+# Linux mint has an updated gcc compiler but not a g++ compiler - leads to error for Neovim
+apt install g++-12
+
 # Things you like flatpak for: 
 #
 #Marktext
@@ -25,3 +28,4 @@ flatpak install flathub com.github.marktext.marktext
 flatpak install flathub com.spotify.Client
 #Discord
 flatpak install flathub com.discordapp.Discord
+
