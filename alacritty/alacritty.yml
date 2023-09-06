@@ -1,7 +1,8 @@
 import:
-  - "C:/Users/Elias/Documents/Github/wonder_dotfiles/alacritty_tokyonight_night.yml"
+  # - "C:/Users/Elias/Documents/Github/wonder_dotfiles/alacritty_tokyonight_night.yml"
   #- "C:/Users/Elias/Documents/Github/wonder_dotfiles/dracula for alacritty/dracla.yml"
 
+working_directory: "~/Documents/GitHub/"
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -92,7 +93,7 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
-    family: Hack
+    family: Hack Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -111,7 +112,7 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
-    family: Hack
+    family: Hack Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -130,7 +131,7 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
-    family: Hack
+    family: Hack Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -149,7 +150,7 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
-    family: Hack
+    family: Hack Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
@@ -208,4 +209,4 @@ font:
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
 #background_opacity: 1.0
-background_opacity: 0.95
+window.opacity: 0.95
