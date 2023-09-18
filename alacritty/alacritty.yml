@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 #import:
+=======
+import:
+  # - "C:/Users/Elias/Documents/Github/wonder_dotfiles/alacritty_tokyonight_night.yml"
+  #- "C:/Users/Elias/Documents/Github/wonder_dotfiles/dracula for alacritty/dracla.yml"
+>>>>>>> 38e2b33a6f8feecbfcab7c4c66e5a27062594926
 
+working_directory: "~/Documents/GitHub/"
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -206,4 +213,5 @@ font:
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
 #background_opacity: 1.0
-window_opacity: 0.95
+window.opacity: 0.95
+>>>>>>> 38e2b33a6f8feecbfcab7c4c66e5a27062594926
