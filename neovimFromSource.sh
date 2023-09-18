@@ -18,7 +18,10 @@ make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install 
 
 # Assuming all went well download NVChad
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 
 
 # Clone my settings
 git clone https://github.com/santised/NvChad ~
+
+# Repository needed for regex
+apt-get install ripgrep
