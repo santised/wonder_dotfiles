@@ -6,7 +6,7 @@ return {
     priority = 1000,
     config = function()
       require("everforest").setup({
-        -- Your config here
+        background = "hard",
       })
     end,
   },
@@ -19,11 +19,25 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "everforest",
+      colorscheme = "catppuccin-mocha",
     },
   },
   {
     "christoomey/vim-tmux-navigator",
+    cmd = {
+      "TmuxNavigateLeft",
+      "TmuxNavigateDown",
+      "TmuxNavigateUp",
+      "TmuxNavigateRight",
+      "TmuxNavigatePrevious",
+    },
+    keys = {
+      { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
+      { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
+      { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
+      { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
+      { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+    },
     lazy = false,
   },
   {
@@ -42,7 +56,7 @@ return {
     "mistricky/codesnap.nvim",
     build = "make",
     keys = {
-      { "<leader>cc", "<cmd>CodeSnap cpp<cr>", mode = "x", desc = "Save selected code snapshot into clipboard" },
+      { "<leader>cn", "<cmd>CodeSnap cpp<cr>", mode = "x", desc = "Save selected code snapshot into clipboard" },
       { "<leader>cs", "<cmd>CodeSnapSave cpp<cr>", mode = "x", desc = "Save selected code snapshot in ~/Pictures" },
     },
     opts = {
@@ -96,6 +110,11 @@ return {
         clangd = {},
         pyright = {},
       },
+      setup = {
+        clangd = function(_, opts)
+          opts.capabilities.offsetEncoding = { "utf-16" }
+        end,
+      },
       inlay_hints = {
         enabled = false,
       },
@@ -109,5 +128,9 @@ return {
         cpp = { "clang-format" },
       },
     }),
+  },
+  {
+    "echasnovki/mini.pairs",
+    enabled = false,
   },
 }
