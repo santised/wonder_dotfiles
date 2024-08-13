@@ -41,6 +41,10 @@ return {
     lazy = false,
   },
   {
+    "echasnovski/mini.move",
+    enabled = false,
+  },
+  {
     "github/copilot.vim",
     event = "VeryLazy",
   },
