@@ -60,6 +60,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 alias start="xdg-open ."
 alias bat="batcat"
+alias ar="arduino-cli"
+alias zen-browser="flatpak run io.github.zen_browser.zen"
 
 export BAT_THEME=gruvbox-dark
 export NVM_DIR="$HOME/.nvm"
