@@ -8,7 +8,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 apt install git -y
 
-#nodejs using npm 
+#nodejs using npm
 apt install npm -y
 npm install nodejs
 
@@ -16,12 +16,12 @@ npm install nodejs
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
 test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-test -r ~/.profile && echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
+test -r ~/.profile && echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >>~/.profile
 
 # Linux mint has an updated gcc compiler but not a g++ compiler - leads to error for Neovim
 apt install g++-12
 
-# Things you like flatpak for: 
+# Things you like flatpak for:
 #
 #Marktext
 flatpak install flathub com.github.marktext.marktext
@@ -32,9 +32,8 @@ flatpak install flathub com.discordapp.Discord
 #Kicad
 flatpak install --from https://flathub.org/repo/appstream/org.kicad.KiCad.flatpakref
 
-#arduino cli and Serial 
+#arduino cli and Serial
 brew install arduino-cli
 apt install cutecom -y
-apt install screen -y
 # config file for arduino-cli
 arduino-cli config init

@@ -41,10 +41,6 @@ return {
     lazy = false,
   },
   {
-    "github/copilot.vim",
-    event = "VeryLazy",
-  },
-  {
     "tpope/vim-surround",
     event = "VeryLazy",
   },
