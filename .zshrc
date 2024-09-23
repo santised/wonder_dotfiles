@@ -61,6 +61,7 @@ source $ZSH/oh-my-zsh.sh
 alias start="xdg-open ."
 alias bat="batcat"
 alias ar="arduino-cli"
+alias ya="yazi"
 alias zen-browser="flatpak run io.github.zen_browser.zen"
 
 export BAT_THEME=gruvbox-dark
