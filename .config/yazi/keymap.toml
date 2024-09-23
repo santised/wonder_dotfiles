@@ -1,9 +1,14 @@
-[manager]
-prepend_keymap = [
-    { on = "y", run = [
-        '''
-        shell 'xclip -selection clipboard -t image/png -i "$@"' --confirm
-        ''',
-        "yank"
-    ], desc = "Yank image and copy it to clipboard" }
-]
+[[manager,prepend_keymap]]
+on = "y" 
+run = [
+  '''
+  shell 'xclip -selection clipboard -t image/png -i "$@"' --confirm
+  ''',
+  "yank"
+] 
+desc = "Yank image and copy it to clipboard" 
+
+[[manager,prepend_keymap]]
+on   = "<C-s>"
+run  = 'shell "$SHELL" --block --confirm' 
+desc = "Open shell here" 
