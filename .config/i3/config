@@ -11,6 +11,7 @@
 
 set $mod Mod4
 
+exec_always --no-startup-id xrandr --output DP-0 --auto --above DP-2
 exec --no-startup-id picom
 exec_always --no-startup-id killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
@@ -29,7 +30,6 @@ default_border pixel 5
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
-#exec_always --no-startup-id xrandr --output DP-0 --auto --above DP-2
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -170,7 +170,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-
 # Pulls up power menu
 bindsym $mod+Shift+x exec --no-startup-id ~/.config/rofi/bin/powermenu
 
@@ -219,7 +218,7 @@ set $darkgray #1d2021
 set $lightgray #bdae93
 
 # class                 border|backgr|text|indicator|child_border
-client.focused          $lightgray $lightgray $bg $purple $darkgray
+client.focused          $yellow $lightgray $bg $purple $blue
 client.focused_inactive $darkgray $darkgray $lightgray $purple $darkgray
 client.unfocused        $darkgray $darkgray $lightgray $purple $darkgray
 client.urgent           $red $red $white $red $red
