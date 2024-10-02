@@ -15,6 +15,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 #nodejs using npm
 npm install nodejs
 
+# This particular package allows for applications that require installing through a website by clicking
+# trough a command prompt in the application. Just ensure that you have a good browser set to default as well.
+sudo pacman -S xdg-desktop-portal-gtk
 flatpak install Spotify
 flatpak install Telegram
 flatpak install Discord
