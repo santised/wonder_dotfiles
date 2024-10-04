@@ -15,7 +15,7 @@ exec_always --no-startup-id xrandr --output DP-0 --auto --above DP-2
 exec --no-startup-id picom
 exec_always --no-startup-id killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
-exec_always feh --bg-fill /home/amo/Pictures/exploring_new_worlds-wallpaper-3440x1440.jpg
+exec_always feh --bg-fill /home/amo/Pictures/Backgrounds/rainforest_fog-wallpaper-3440x1440.jpg
 exec_always picom -f
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -59,6 +59,8 @@ tiling_drag modifier titlebar
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec alacritty
+bindsym $mod+F1 exec flatpak run io.github.zen_browser.zen
+bindsym $mod+F2 exec alacritty -e yazi
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -79,10 +81,10 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+bindsym $mod+Left move left
+bindsym $mod+Down move down
+bindsym $mod+Up move up
+bindsym $mod+Right move right
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -158,6 +160,8 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
+# Move the current workspace to the "next" window
+bindsym $mod+x move workspace to output next
 workspace 1 output DP2
 workspace 3 output DP0
 

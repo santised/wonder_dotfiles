@@ -11,6 +11,14 @@ return {
     end,
   },
   {
+    "gbprod/nord.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("nord").setup({})
+    end,
+  },
+  {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
@@ -20,9 +28,12 @@ return {
     "savq/melange-nvim",
   },
   {
+    "rebelot/kanagawa.nvim",
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "melange",
+      colorscheme = "everforest",
     },
   },
   {
