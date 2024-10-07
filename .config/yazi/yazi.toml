@@ -5,11 +5,15 @@ app_image = [
 pdf = [
 { run = 'xreader "$0"', orphan = true, desc = "Open PDF", for = "unix" }
 ]
+vlc = [
+{ run = 'vlc "$0"', orphan = true, desc = "Open MP4", for = "unix" }
+]
 
 [open]
 prepend_rules = [
 {name = "*.AppImage", use = ["app_image"]},
 {name = "*.pdf", use = ["pdf"]},
+{name = "*.mp4", use = ["vlc"]},
 ]
 
 [manager]
