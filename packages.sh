@@ -36,3 +36,11 @@ arduino-cli config init
 #uucp enables serial port access
 #Must log out for changes to take effect
 sudo usermod -a -G uucp $USER
+
+#Lua installations required for neovim
+# https://luarocks.org/#quick-start
+wget https://luarocks.org/releases/luarocks-3.11.1.tar.gz
+tar zxpf luarocks-3.11.1.tar.gz
+cd luarocks-3.11.1
+./configure && make && sudo make install
+sudo luarocks install luasocket
