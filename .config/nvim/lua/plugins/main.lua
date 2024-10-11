@@ -1,42 +1,5 @@
 return {
   {
-    "neanias/everforest-nvim",
-    version = false,
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require("everforest").setup({
-        background = "hard",
-      })
-    end,
-  },
-  {
-    "gbprod/nord.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require("nord").setup({})
-    end,
-  },
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 1000,
-    lazy = false,
-  },
-  {
-    "savq/melange-nvim",
-  },
-  {
-    "rebelot/kanagawa.nvim",
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "everforest",
-    },
-  },
-  {
     "christoomey/vim-tmux-navigator",
     cmd = {
       "TmuxNavigateLeft",
@@ -100,59 +63,12 @@ return {
     },
   },
   {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "clangd",
-        "clang-format",
-        "ltex-ls",
-        "pyright",
-        "ruff",
-        "mypy",
-        "black",
-        "arduino-language-server",
-      },
+    "OXY2DEV/markview.nvim",
+    lazy = false, -- Recommended
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-tree/nvim-web-devicons",
     },
-  },
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        clangd = {},
-        pyright = {},
-        arduino_language_server = {},
-      },
-      setup = {
-        clangd = function(_, opts)
-          opts.capabilities.offsetEncoding = { "utf-16" }
-        end,
-      },
-      inlay_hints = {
-        enabled = false,
-      },
-    },
-  },
-  {
-    require("conform").setup({
-      formatters_by_ft = {
-        lua = { "stylua" },
-        python = { "isort", "black" },
-        cpp = { "clang-format" },
-        ino = { "arduino-language-server" },
-      },
-    }),
-  },
-  {
-    "echasnovki/mini.pairs",
-    enabled = false,
-  },
-  {
-    "folke/flash.nvim",
-    enabled = false,
-  },
-  {
-    "MeanderingProgrammer/render-markdown.nvim",
-    enabled = false,
   },
   {
     -- Install markdown preview, use npx if available.
