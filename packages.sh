@@ -44,3 +44,6 @@ tar zxpf luarocks-3.11.1.tar.gz
 cd luarocks-3.11.1
 ./configure && make && sudo make install
 sudo luarocks install luasocket
+
+# Need java installed for latex
+yay -S jdk
