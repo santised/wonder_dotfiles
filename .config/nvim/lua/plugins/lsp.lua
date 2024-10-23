@@ -19,8 +19,15 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        clangd = {},
+        clangd = {
+          settings = {
+            codeLens = {
+              enable = true,
+            },
+          },
+        },
         pyright = {},
+        rust_analyzer = {},
         arduino_language_server = {},
       },
       setup = {
