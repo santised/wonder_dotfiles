@@ -63,6 +63,9 @@ alias bat="batcat"
 alias ar="arduino-cli"
 alias ya="yazi"
 alias zen-browser="flatpak run io.github.zen_browser.zen"
+alias toggleVPN="~/./SparkFun/sparkfunVPN/toggleVPN.sh"
+alias SparkDir="cd ~/SparkFun"
+alias GitDir="cd ~/Git-Personal/"
 
 export BAT_THEME=gruvbox-dark
 export NVM_DIR="$HOME/.nvm"
