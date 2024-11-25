@@ -1,4 +1,4 @@
--- local currentDate = os.date("%Y-%m-%d")
+local currentDate = os.date("%m-%d-%Y")
 return {
   "folke/snacks.nvim",
   opts = {
@@ -22,28 +22,32 @@ return {
           { icon = " ", key = "q", desc = "Quit", action = ":qa" },
         },
         header = [[
-   █████████   ██████   ██████    ███████   
-  ███░░░░░███ ░░██████ ██████   ███░░░░░███ 
- ░███    ░███  ░███░█████░███  ███     ░░███
- ░███████████  ░███░░███ ░███ ░███      ░███
- ░███░░░░░███  ░███ ░░░  ░███ ░███      ░███
- ░███    ░███  ░███      ░███ ░░███     ███ 
- █████   █████ █████     █████ ░░░███████░  
-░░░░░   ░░░░░ ░░░░░     ░░░░░    ░░░░░░░    
-
+ █████╗ ███╗   ███╗ ██████╗ 
+██╔══██╗████╗ ████║██╔═══██╗
+███████║██╔████╔██║██║   ██║
+██╔══██║██║╚██╔╝██║██║   ██║
+██║  ██║██║ ╚═╝ ██║╚██████╔╝
+╚═╝  ╚═╝╚═╝     ╚═╝ ╚═════╝ 
         ]],
       },
       sections = {
-        { section = "header" },
-        { section = "keys", gap = 1, padding = 1 },
-        { section = "startup" },
+        {
+          section = "terminal",
+          cmd = "chafa ~/Pictures/BMO.png  --format symbols --symbols sextant --size 70x50; sleep .1",
+          height = 40,
+          padding = 0,
+        },
         {
           pane = 2,
-          section = "terminal",
-          cmd = "chafa ~/Pictures/CircleA.png  --format symbols --symbols vhalf --size 100x30; sleep .1",
-          height = 50,
-          indent = 2,
-          padding = 1,
+          { section = "header" },
+          {
+            text = { currentDate },
+            align = "center",
+            hl = "key",
+            padding = 1,
+          },
+          { section = "keys", gap = 1, padding = 1 },
+          { section = "startup" },
         },
       },
     },
