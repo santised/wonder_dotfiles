@@ -69,6 +69,7 @@ alias SDJ="cd ~/SparkFun/JLCPCB-Transfer-Eagle-Files/"
 alias GD="cd ~/Git-Personal/"
 alias GDN="cd ~/Git-Personal/Notes/"
 
+
 export BAT_THEME=gruvbox-dark
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

@@ -1,0 +1,8 @@
+- name: Page One
+  columns:
+    - size: full
+    - type: group
+      widgets:
+        - type: reddit
+          subreddit: popular
+          show-thumbnails: true

@@ -1,0 +1,82 @@
+- name: Home
+  # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
+  # hide-desktop-navigation: true
+  columns:
+    - size: small
+      widgets:
+        - type: clock
+          hour-format: 12h
+
+        - type: calendar
+          first-day-of-week: monday
+
+        - type: weather
+          location: Longmont, Colorado, United States
+          units: imperial # alternatively "imperial"
+          hour-format: 12h # alternatively "24h"
+          # Optionally hide the location from being displayed in the widget
+          # hide-location: true
+
+        - type: twitch-channels
+          channels:
+            - pathofexile
+
+    - size: full
+      widgets:
+        - type: search
+          search-engine: duckduckgo
+          new-tab: true
+
+        - type: group
+          widgets:
+            - type: hacker-news
+
+        - type: videos
+          channels:
+            - UCj1VqrHhDte54oLgPG4xpuQ # Stuff Made Here
+            - UCHnyfMqiRRG1u-2MsSQLbXA # Veritasium
+            - UC1SoHjGhDqK6h980sYsXjhg # Sirgog
+            - UCsBjURrPoezykLs9EqgamOA # Fireship
+            - UCnaP100kTBB_WGM9IiF73yw # Mathil
+            - UCvlj0IzjSnNoduQF0l3VGng # Some More News
+            - UCA7X5unt1JrIiVReQDUbl_A # Path of Exile
+        - type: group
+          widgets:
+            - type: reddit
+              subreddit: pathofexile
+              show-thumbnails: true
+            - type: reddit
+              subreddit: pathofexile2
+              show-thumbnails: true
+            - type: reddit
+              subreddit: selfhosted
+              show-thumbnails: true
+            - type: reddit
+              subreddit: unixporn
+              show-thumbnails: true
+
+    - size: small
+      widgets:
+
+        - type: rss
+          limit: 10
+          collapse-after: 3
+          cache: 12h
+          feeds:
+            - url: https://www.pathofexile.com/news/
+              title: Path of Exile
+            - url: https://hackaday.com/blog/feed/
+              title: Hackaday
+
+        - type: repository
+          repository: santised/wonder_dotfiles
+
+        - type: releases
+          cache: 1d
+          # Without authentication the Github API allows for up to 60 requests per hour. You can create a
+          # read-only token from your Github account settings and use it here to increase the limit.
+          # token: ...
+          repositories:
+            - neovim/neovim
+            - LazyVim/LazyVim
+            - glanceapp/glance
