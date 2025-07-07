@@ -15,7 +15,7 @@ exec_always --no-startup-id xrandr --output DP-0 --auto --above DP-2
 exec --no-startup-id picom
 exec_always --no-startup-id killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
-exec_always feh --bg-fill /home/amo/Pictures/Backgrounds/rainforest_fog-wallpaper-3440x1440.jpg
+exec_always feh --bg-fill /home/amo/Pictures/Backgrounds/abandoned_spaceship_art-wallpaper-3440x1440.jpg
 exec_always picom -f
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -58,9 +58,10 @@ tiling_drag modifier titlebar
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec alacritty
-bindsym $mod+F1 exec flatpak run io.github.zen_browser.zen
-bindsym $mod+F2 exec alacritty -e yazi
+bindsym $mod+Return exec kitty
+bindsym $mod+F1 exec firefox
+bindsym $mod+F2 exec kitty -e yazi
+bindsym $mod+F3 exec flameshot gui
 
 # kill focused window
 bindsym $mod+Shift+q kill
