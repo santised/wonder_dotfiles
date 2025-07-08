@@ -1,0 +1,33 @@
+[opener]
+app_image = [
+{ run = '"$0"', orphan = true, desc = "Run AppImage", for = "unix" }
+]
+pdf = [
+{ run = 'xreader "$0"', orphan = true, desc = "Open PDF", for = "unix" }
+]
+vlc = [
+{ run = 'vlc "$0"', orphan = true, desc = "Open MP4", for = "unix" }
+]
+libre = [
+{ run = 'libreoffice "$0"', orphan = true, desc = "Open Sheets", for = "unix" }
+]
+eagle = [
+{ run = 'eagle "$0"', orphan = true, desc = "Open Eagle CAD", for = "unix" }
+]
+kicad = [
+{ run = 'kicad "$0"', orphan = true, desc = "Open KiCad Prjoect", for = "unix" }
+]
+
+[open]
+prepend_rules = [
+{name = "*.AppImage", use = ["app_image"]},
+{name = "*.pdf", use = ["pdf"]},
+{name = "*.mp4", use = ["vlc"]},
+{name = "*.csv", use = ["libre"]},
+{name = "*.brd", use = ["eagle"]},
+{name = "*.sch", use = ["eagle"]},
+{name = "*.kicad_*", use = ["kicad"]},
+]
+
+[manager]
+ratio = [2,3,3]
