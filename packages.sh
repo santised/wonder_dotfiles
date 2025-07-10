@@ -7,7 +7,7 @@
 #  ╚██████╔╝███████╗██║ ╚████║███████╗██║  ██║██║  ██║███████╗
 #   ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 # Text editor, browser, programs for ricing i3
-sudo pacman -S neovim clang firefox lazygit npm feh rofi picom polybar picom pyenv yazi
+sudo pacman -S neovim clang firefox lazygit npm feh rofi picom polybar picom pyenv yazi xclip
 #nodejs using npm
 npm install nodejs
 
@@ -45,7 +45,6 @@ flatpak install Telegram
 flatpak install Discord
 # Serial Monitor GUI
 flatpak install moserial
-flatpak install zen
 
 #   █████╗ ██████╗ ██████╗ ██╗   ██╗██╗███╗   ██╗ ██████╗      ██████╗██╗     ██╗
 #  ██╔══██╗██╔══██╗██╔══██╗██║   ██║██║████╗  ██║██╔═══██╗    ██╔════╝██║     ██║
