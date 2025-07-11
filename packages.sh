@@ -7,7 +7,7 @@
 #  ╚██████╔╝███████╗██║ ╚████║███████╗██║  ██║██║  ██║███████╗
 #   ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 # Text editor, browser, programs for ricing i3
-sudo pacman -S neovim clang firefox lazygit npm feh rofi picom polybar picom pyenv yazi xclip
+sudo pacman -S neovim clang firefox lazygit npm feh rofi picom polybar picom pyenv yazi xclip input-remapper
 #nodejs using npm
 npm install nodejs
 
