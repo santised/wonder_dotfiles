@@ -88,3 +88,6 @@ yay -S jdk
 # When installing the app image for the logic analyzer: https://www.saleae.com/pages/downloads
 # Make sure to install libxcrypt-compat package
 sudo pacman -S libxcrypt-compat
+
+# You'll need to download your font from here:https://www.nerdfonts.com/font-downloads
+# Copy the download into your a new font directory: mkdir ~/.fonts
