@@ -15,7 +15,7 @@ eagle = [
 { run = 'eagle "$0"', orphan = true, desc = "Open Eagle CAD", for = "unix" }
 ]
 kicad = [
-{ run = 'kicad "$0"', orphan = true, desc = "Open KiCad Prjoect", for = "unix" }
+{ run = 'org.kicad.KiCad "$0"', orphan = true, desc = "Open KiCad Prjoect", for = "unix" }
 ]
 
 [open]
@@ -26,7 +26,7 @@ prepend_rules = [
 {name = "*.csv", use = ["libre"]},
 {name = "*.brd", use = ["eagle"]},
 {name = "*.sch", use = ["eagle"]},
-{name = "*.kicad_*", use = ["org.kicad.KiCad"]},
+{name = "*.kicad_pro", use = ["kicad"]},
 ]
 
 [mgr]
