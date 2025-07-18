@@ -10,7 +10,8 @@
 sudo pacman -S neovim clang firefox lazygit npm feh rofi picom polybar picom pyenv yazi xclip input-remapper
 #nodejs using npm
 npm install nodejs
-
+# Python env and installer manager - astral uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
 #
 #
 #  ████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ██╗
