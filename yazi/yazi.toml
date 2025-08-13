@@ -17,6 +17,9 @@ eagle = [
 kicad = [
 { run = 'org.kicad.KiCad "$0"', orphan = true, desc = "Open KiCad Prjoect", for = "unix" }
 ]
+arduino = [
+{ run = 'nvim "$0"', orphan = true, desc = "Open .ino files", for = "unix" }
+]
 
 [open]
 prepend_rules = [
@@ -27,6 +30,7 @@ prepend_rules = [
 {name = "*.brd", use = ["eagle"]},
 {name = "*.sch", use = ["eagle"]},
 {name = "*.kicad_pro", use = ["kicad"]},
+{name = "*.ino", use = ["arduino"]},
 ]
 
 [mgr]
