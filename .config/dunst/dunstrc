@@ -108,7 +108,7 @@
     icon = /usr/share/icons/Qogir/16/emblems/emblem-question.svg
 
 [urgency_critical]
-    background = "#28143c"
+    background = "#8ABEB7"
     foreground = "#ffffff"
     frame_color = "#ff7f7f"
     timeout = 120
