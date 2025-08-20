@@ -296,7 +296,8 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym $mod+y exec kitty -e yazi
 bindsym $mod+w exec --no-startup-id /usr/bin/firefox
 bindsym $mod+n exec --no-startup-id /usr/bin/thunar
-bindsym $mod+p exec org.flameshot.Flameshot gui
+bindsym $mod+p exec flameshot
+bindsym $mod+c exec io.github.Qalculate
 # bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
 # Power Profiles menu switcher (rofi)
@@ -322,19 +323,21 @@ set $ws10 "10"
 # use workspaces on different displays:
 # where you have to replace VGA-0/HDMI-0 with the names for your displays
 # you can get from xrandr command
-workspace $ws1 output DP-2
-workspace $ws2 output DP-0
-workspace $ws3 output DP-2
-workspace $ws4 output DP-0
-workspace $ws5 output DP-2
-workspace $ws6 output DP-0
+workspace $ws1 output DisplayPort-0
+workspace $ws2 output DisplayPort-1
+workspace $ws3 output DisplayPort-0
+workspace $ws4 output DisplayPort-1
+workspace $ws5 output DisplayPort-0
+workspace $ws6 output DisplayPort-1
 
 # bind program to workspace and focus to them on startup:
 # assign [class="(?i)firefox"] $ws1
 # assign [class="kitty"] $ws2
 # assign [class="Thunar"] $ws3
 # assign [class="thunderbird"] $ws4
-# assign [class="TelegramDesktop"] $ws5
+assign [class="Proton Mail"] $ws1
+assign [class="Spotify"] $ws1
+assign [class="Signal"] $ws1
 
 # automatic set focus new window if it opens on another workspace than the current:
 # for_window [class=Xfce4-terminal] focus
@@ -381,7 +384,7 @@ exec --no-startup-id ~/.screenlayout/dual_screen.sh
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec_always --no-startup-id sleep 1 && feh --bg-fill ~/Pictures/Backgrounds/3d_retrofuturistic_tech-wallpaper-3440x1440.jpg
+exec_always --no-startup-id sleep 1 && feh --bg-fill ~/Pictures/Wallpapers/spaceman_art-wallpaper-3440x1440.jpg
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
@@ -441,6 +444,7 @@ exec --no-startup-id /usr/bin/dunst
 for_window [class="Yad" instance="yad"] floating enable
 for_window [class="Galculator" instance="galculator"] floating enable
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
+for_window [class="Qalculate-gtk" instance="qalculate-gtk"] floating enable
 
 # set floating (nontiling) for special apps
 for_window [class="Xsane" instance="xsane"] floating enable
