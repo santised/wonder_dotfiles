@@ -59,8 +59,9 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # Default ssh credentials for SparkFun
 eval $(ssh-agent)
-ssh-add ~/.ssh/sparkfun
+ssh-add ~/.ssh/work/sparkfun
 clear
 
 
+eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
