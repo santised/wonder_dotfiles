@@ -384,7 +384,7 @@ exec --no-startup-id ~/.screenlayout/dual_screen.sh
 
 # set wallpaper
 # exec --no-startup-id sleep 2 && nitrogen --restore
-exec_always --no-startup-id sleep 1 && feh --bg-fill ~/Pictures/Wallpapers/spaceman_art-wallpaper-3440x1440.jpg
+exec_always --no-startup-id sleep 1 && feh --bg-fill ~/Pictures/Wallpapers/3d_retrofuturistic_tech-wallpaper-3440x1440.jpg
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
