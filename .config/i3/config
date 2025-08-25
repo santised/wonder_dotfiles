@@ -196,7 +196,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # keybinding in fancy rofi (automated):
-bindsym F1 exec --no-startup-id ~/.config/i3/scripts/keyhint-2
+#bindsym F1 exec --no-startup-id ~/.config/i3/scripts/keyhint-2
 # alternative
 # keybinding list in editor:
 # bindsym $mod+F1 exec --no-startup-id xed ~/.config/i3/keybindings
@@ -349,7 +349,7 @@ assign [class="Signal"] $ws1
 ##############
 #
 # for custom config:
-exec_always --no-startup-id picom --config  ~/.config/picom.conf
+exec_always --no-startup-id picom -f --config  ~/.config/picom.conf
 
 #############################################
 # autostart applications/services on login: #
@@ -399,7 +399,7 @@ exec --no-startup-id xset s 480 dpms 600 600 600
 
 # xscreensaver
 # https://www.jwz.org/xscreensaver
-# exec --no-startup-id xscreensaver --no-splash
+exec --no-startup-id xscreensaver --no-splash
 
 # Desktop notifications
 # dunst config used ~/.config/dunst/dunstrc
