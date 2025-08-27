@@ -349,7 +349,7 @@ assign [class="Signal"] $ws1
 ##############
 #
 # for custom config:
-exec_always --no-startup-id picom -f --config  ~/.config/picom.conf
+exec_always --no-startup-id picom --fading --daemon --config  ~/.config/picom.conf
 
 #############################################
 # autostart applications/services on login: #
