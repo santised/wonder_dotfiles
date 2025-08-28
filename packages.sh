@@ -8,7 +8,7 @@
 #   ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 # Text editor, browser, programs for ricing i3
 sudo pacman -S zsh neovim clang firefox lazygit npm feh rofi picom polybar picom dunst xclip fd ripgrep xscreensaver wine btop gparted --needed --noconfirm
-sudo pacman -S yazi ffmpeg 7zip jq poppler fzf zoxide resvg imagemagick --needed --noconfirm
+sudo pacman -S yazi ffmpeg 7zip jq poppler fzf zoxide resvg imagemagick zellij --needed --noconfirm
 #nodejs using npm
 npm install nodejs
 # Python env and installer manager - astral uv
@@ -41,6 +41,7 @@ flatpak install flathub art.taunoerik.tauno-serial-plotter -y
 flatpak install flathub org.kicad.KiCad -y
 flatpak install flathub io.github.Qalculate -y
 flatpak install flathub org.libreoffice.LibreOffice -y
+flatpak install art.taunoerik.tauno-serial-plotter -y
 # Serial Monitor GUI
 flatpak install flathub org.gnome.moserial -y
 
