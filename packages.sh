@@ -7,7 +7,8 @@
 #  ╚██████╔╝███████╗██║ ╚████║███████╗██║  ██║██║  ██║███████╗
 #   ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 # Text editor, browser, programs for ricing i3
-sudo pacman -S neovim clang firefox lazygit npm feh rofi picom polybar picom dunst yazi xclip fd ripgrep xscreensaver wine btop gparted --needed --noconfirm
+sudo pacman -S zsh neovim clang firefox lazygit npm feh rofi picom polybar picom dunst xclip fd ripgrep xscreensaver wine btop gparted --needed --noconfirm
+sudo pacman -S yazi ffmpeg 7zip jq poppler fzf zoxide resvg imagemagick --needed --noconfirm
 #nodejs using npm
 npm install nodejs
 # Python env and installer manager - astral uv
@@ -39,6 +40,7 @@ flatpak install flathub com.discordapp.Discord -y
 flatpak install flathub art.taunoerik.tauno-serial-plotter -y
 flatpak install flathub org.kicad.KiCad -y
 flatpak install flathub io.github.Qalculate -y
+flatpak install flathub org.libreoffice.LibreOffice -y
 # Serial Monitor GUI
 flatpak install flathub org.gnome.moserial -y
 
@@ -59,6 +61,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 #oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 #   █████╗ ██████╗ ██████╗ ██╗   ██╗██╗███╗   ██╗ ██████╗      ██████╗██╗     ██╗
 #  ██╔══██╗██╔══██╗██╔══██╗██║   ██║██║████╗  ██║██╔═══██╗    ██╔════╝██║     ██║
@@ -91,7 +95,7 @@ cd luarocks-3.11.1
 ./configure && make && sudo make install
 sudo luarocks install luasocket
 # Need java installed for latex
-yay -S jdk --needed --noconfirm
+yay -S jdk eagle --needed --noconfirm
 
 #  ██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ ███╗   ███╗
 #  ██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔═══██╗████╗ ████║
