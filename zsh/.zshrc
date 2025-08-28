@@ -65,3 +65,5 @@ clear
 
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+
+. "$HOME/.local/bin/env"

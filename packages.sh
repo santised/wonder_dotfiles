@@ -7,28 +7,13 @@
 #  ╚██████╔╝███████╗██║ ╚████║███████╗██║  ██║██║  ██║███████╗
 #   ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 # Text editor, browser, programs for ricing i3
-sudo pacman -S neovim clang firefox lazygit npm feh rofi picom polybar picom pyenv yazi xclip input-remapper
+sudo pacman -S neovim clang firefox lazygit npm feh rofi picom polybar picom pyenv yazi xclip --needed --noconfirm
 #nodejs using npm
 npm install nodejs
 # Python env and installer manager - astral uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
-#
-#
-#  ████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ██╗
-#  ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗██║
-#     ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║██║
-#     ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██╔══██║██║
-#     ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║███████╗
-#     ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
-
-#Rust for Alacritty
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-#tpm for tmux config
-#Need to source and then install with CTRL+SPACE+I
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-#oh my zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
+# starship
+curl -sS https://starship.rs/install.sh | sh
 #
 #
 #  ███████╗██╗      █████╗ ████████╗██████╗  █████╗ ██╗  ██╗
@@ -46,6 +31,23 @@ flatpak install Telegram
 flatpak install Discord
 # Serial Monitor GUI
 flatpak install moserial
+
+#
+#
+#  ████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ██╗
+#  ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗██║
+#     ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║██║
+#     ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██╔══██║██║
+#     ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║███████╗
+#     ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
+
+#Rust for Alacritty
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+#tpm for tmux config
+#Need to source and then install with CTRL+SPACE+I
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+#oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #   █████╗ ██████╗ ██████╗ ██╗   ██╗██╗███╗   ██╗ ██████╗      ██████╗██╗     ██╗
 #  ██╔══██╗██╔══██╗██╔══██╗██║   ██║██║████╗  ██║██╔═══██╗    ██╔════╝██║     ██║
