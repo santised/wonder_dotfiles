@@ -109,6 +109,8 @@ yay -S jdk eagle --needed --noconfirm
 # Make sure to install libxcrypt-compat package
 sudo pacman -S libxcrypt-compat steam --needed --noconfirm
 mkdir ~/.fonts
+mkdir ~/SparkFun
+mkdir ~/Git-Personal/
 
 # You'll need to download your font from here:https://www.nerdfonts.com/font-downloads
 # Copy the download into your a new font directory: mkdir ~/.fonts
