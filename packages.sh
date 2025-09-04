@@ -8,7 +8,7 @@
 #   ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
 # Text editor, browser, programs for ricing i3
 sudo pacman -S zsh neovim clang firefox lazygit npm feh rofi picom polybar picom dunst xclip fd ripgrep xscreensaver wine btop gparted --needed --noconfirm
-sudo pacman -S yazi ffmpeg 7zip jq poppler fzf zoxide resvg imagemagick zellij --needed --noconfirm
+sudo pacman -S yazi ffmpeg 7zip jq poppler fzf zoxide resvg imagemagick zellij xf86-video-vesa xf86-video-fbdev xf86-video-amdgpu --needed --noconfirm
 #nodejs using npm
 npm install nodejs
 # Python env and installer manager - astral uv
