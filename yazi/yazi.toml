@@ -9,7 +9,7 @@ vlc = [
 { run = 'vlc "$0"', orphan = true, desc = "Open MP4", for = "unix" }
 ]
 libre = [
-{ run = 'libreoffice "$0"', orphan = true, desc = "Open Sheets", for = "unix" }
+{ run = 'org.libreoffice.LibreOffice "$0"', orphan = true, desc = "Open Sheets", for = "unix" }
 ]
 eagle = [
 { run = 'eagle "$0"', orphan = true, desc = "Open Eagle CAD", for = "unix" }

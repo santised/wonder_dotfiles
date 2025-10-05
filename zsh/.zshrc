@@ -3,6 +3,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/bin:$PATH"
+fpath=($HOME/completion_arduino_zsh/ $fpath)
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -59,7 +60,7 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # Default ssh credentials for SparkFun
 eval $(ssh-agent)
-ssh-add ~/.ssh/work/sparkfun
+ssh-add ~/.ssh/sparkfun/work
 clear
 
 

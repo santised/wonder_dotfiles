@@ -35,7 +35,7 @@ exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 #####################
 
 # default i3 tiling mode:
-workspace_layout default
+workspace_layout stacking
 # i3 stacking layout:
 # Each window will be fullscreen and tabbed top to bottom.
 #workspace_layout stacking
@@ -323,12 +323,12 @@ set $ws10 "10"
 # use workspaces on different displays:
 # where you have to replace VGA-0/HDMI-0 with the names for your displays
 # you can get from xrandr command
-workspace $ws1 output DisplayPort-0
-workspace $ws2 output DisplayPort-1
-workspace $ws3 output DisplayPort-0
-workspace $ws4 output DisplayPort-1
-workspace $ws5 output DisplayPort-0
-workspace $ws6 output DisplayPort-1
+workspace $ws1 output DisplayPort-1
+workspace $ws2 output DisplayPort-0
+workspace $ws3 output DisplayPort-1
+workspace $ws4 output DisplayPort-0
+workspace $ws5 output DisplayPort-1
+workspace $ws6 output DisplayPort-0
 
 # bind program to workspace and focus to them on startup:
 # assign [class="(?i)firefox"] $ws1
@@ -338,6 +338,10 @@ workspace $ws6 output DisplayPort-1
 assign [class="Proton Mail"] $ws1
 assign [class="Spotify"] $ws1
 assign [class="Signal"] $ws1
+assign [class="steam"] $ws5
+
+exec --no-startup-id /usr/bin/proton-mail
+exec --no-startup-id /usr/bin/signal-desktop
 
 # automatic set focus new window if it opens on another workspace than the current:
 # for_window [class=Xfce4-terminal] focus

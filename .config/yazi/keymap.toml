@@ -29,6 +29,6 @@ run  = "cd ~/SparkFun/"
 desc = "Cd to ~/SparkFun"
 
 [[mgr.prepend_keymap]]
-on   = [ "g", "g" ]
+on   = [ "g", "n" ]
 run  = "cd ~/Git-Personal/"
 desc = "Cd to ~/Git-Personal/"
