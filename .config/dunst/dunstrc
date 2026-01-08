@@ -49,7 +49,7 @@
     idle_threshold = 0
 
     ### Text ###
-    font = SpaceMono Nerd Font
+    font = HeavyData Nerd Font 16
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"

@@ -1,36 +1,36 @@
 [opener]
 app_image = [
-{ run = '"$0"', orphan = true, desc = "Run AppImage", for = "unix" }
+{ run = "%s", orphan = true, desc = "Run AppImage", for = "unix" }
 ]
 pdf = [
-{ run = 'xreader "$0"', orphan = true, desc = "Open PDF", for = "unix" }
+{ run = "xreader %s", orphan = true, desc = "Open PDF", for = "unix" }
 ]
 vlc = [
-{ run = 'vlc "$0"', orphan = true, desc = "Open MP4", for = "unix" }
+{ run = "vlc %s", orphan = true, desc = "Open MP4", for = "unix" }
 ]
 libre = [
-{ run = 'org.libreoffice.LibreOffice "$0"', orphan = true, desc = "Open Sheets", for = "unix" }
+{ run = "org.libreoffice.LibreOffice %s", orphan = true, desc = "Open Sheets", for = "unix" }
 ]
 eagle = [
-{ run = 'eagle "$0"', orphan = true, desc = "Open Eagle CAD", for = "unix" }
+{ run = "eagle %s", orphan = true, desc = "Open Eagle CAD", for = "unix" }
 ]
 kicad = [
-{ run = 'org.kicad.KiCad "$0"', orphan = true, desc = "Open KiCad Prjoect", for = "unix" }
+{ run = "org.kicad.KiCad %s", orphan = true, desc = "Open KiCad Prjoect", for = "unix" }
 ]
 arduino = [
-{ run = 'nvim "$0"', orphan = true, desc = "Open .ino files", for = "unix" }
+{ run = "nvim %s", orphan = true, desc = "Open .ino files", for = "unix" }
 ]
 
 [open]
 prepend_rules = [
-{name = "*.AppImage", use = ["app_image"]},
-{name = "*.pdf", use = ["pdf"]},
-{name = "*.mp4", use = ["vlc"]},
-{name = "*.csv", use = ["libre"]},
-{name = "*.brd", use = ["eagle"]},
-{name = "*.sch", use = ["eagle"]},
-{name = "*.kicad_pro", use = ["kicad"]},
-{name = "*.ino", use = ["arduino"]},
+{url = "*.AppImage", use = "app_image"},
+{url = "*.pdf", use = "pdf"},
+{url = "*.mp4", use = "vlc"},
+{url = "*.csv", use = "libre"},
+{url = "*.brd", use = "eagle"},
+{url = "*.sch", use = "eagle"},
+{url = "*.kicad_pro", use = "kicad"},
+{url = "*.ino", use = "arduino"},
 ]
 
 [mgr]
