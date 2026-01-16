@@ -3,6 +3,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin
 fpath=($HOME/completion_arduino_zsh/ $fpath)
 
 # Set name of the theme to load --- if set to "random", it will

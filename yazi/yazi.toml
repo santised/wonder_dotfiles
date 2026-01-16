@@ -18,7 +18,7 @@ kicad = [
 { run = "org.kicad.KiCad %s", orphan = true, desc = "Open KiCad Prjoect", for = "unix" }
 ]
 arduino = [
-{ run = "nvim %s", orphan = true, desc = "Open .ino files", for = "unix" }
+{ run = "$EDITOR %s", orphan = true, desc = "Open .ino files", for = "unix" }
 ]
 
 [open]
@@ -30,7 +30,6 @@ prepend_rules = [
 {url = "*.brd", use = "eagle"},
 {url = "*.sch", use = "eagle"},
 {url = "*.kicad_pro", use = "kicad"},
-{url = "*.ino", use = "arduino"},
 ]
 
 [mgr]
