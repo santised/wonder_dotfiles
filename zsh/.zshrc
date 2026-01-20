@@ -52,6 +52,7 @@ source $ZSH/oh-my-zsh.sh
 alias start="xdg-open ."
 alias ar="arduino-cli"
 alias toggleVPN="~/./SparkFun/sparkfunVPN/toggleVPN.sh"
+alias arcompup="ar compile -b esp32:esp32:esp32 . --upload -p /dev/ttyUSB0"
 
 # Not sure why I have this in here.....
 export NVM_DIR="$HOME/.nvm"
