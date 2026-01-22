@@ -37,17 +37,25 @@ return {
 		"savq/melange-nvim",
 	},
 	{
+		"MunifTanjim/nui.nvim",
+	},
+	{
 		"rebelot/kanagawa.nvim",
 	},
 	{
 		"loctvl842/monokai-pro.nvim",
+		config = function()
+			require("monokai-pro").setup({
+				filter = "octagon",
+			})
+		end,
 		priority = 1000,
 		lazy = false,
 	},
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "monokai-pro-octagon",
+			colorscheme = "monokai-pro",
 		},
 	},
 }
