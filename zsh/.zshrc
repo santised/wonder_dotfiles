@@ -51,6 +51,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 alias start="xdg-open ."
 alias ar="arduino-cli"
+alias pc="picocom -b 115200 /dev/ttyUSB0"
 alias toggleVPN="~/./SparkFun/sparkfunVPN/toggleVPN.sh"
 alias arcompup="ar compile -b esp32:esp32:esp32 . --upload -p /dev/ttyUSB0"
 

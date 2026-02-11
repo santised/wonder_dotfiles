@@ -4,3 +4,6 @@
 vim.g.copilot_no_tab_map = true
 vim.g.copilot_assume_mapped = true
 vim.api.nvim_set_keymap("i", "<F1>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+
+local opts = { noremap = true, silent = true }
+vim.api.nvim_set_keymap("n", "<F2>", ":lua require('neogen').generate()<CR>", opts)
